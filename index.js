@@ -4,7 +4,8 @@ let puppeteer;
 
 if (process.env.AWS_LAMBDA_FUNCTION_VERSION) {
   puppeteer = require("puppeteer-core");
-  chrome = require("chrome-aws-lambda");
+  // chrome = require("chrome-aws-lambda");
+  chrome = require("sparticuz/chromium");
 } else {
   puppeteer = require("puppeteer");
 }
